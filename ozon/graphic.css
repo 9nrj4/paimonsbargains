@@ -1,0 +1,143 @@
+.dashboard-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 56px;
+    margin-top: 40px;
+}
+
+
+.graphic {
+    flex: 2; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.graphic-info {
+    flex: 1; 
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.graphic-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.graphic-paragraph div {
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.graphic-paragraph div:hover {
+    transform: translateY(-5px); 
+}
+
+.graphic-paragraph h3 {
+    color: black;
+    margin-bottom: 8px;
+}
+
+.graphic-paragraph p {
+    color: #6E6E6E;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+
+.graphic-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+.graphic-btns a{
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+}
+
+.graphic-btns a:first-child {
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    background-color: #a4b4d5;
+    color: white;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.graphic-btns a:last-child {
+    color: #a4b5d5;
+    text-align: center;
+}
+
+.graphic-btns a:first-child:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.1);
+}
+.graphic-btns a:last-child:hover{
+    color: #2c1b79;
+}
+
+
+.dashboard {
+    width: 100%;
+}
+
+.dashboard .header {
+    margin-bottom: 20px;
+}
+
+.dashboard .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.chart-card {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.chart-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.total-value {
+    font-size: 12px;
+    color: #666;
+}
+
+.chart-container {
+    height: 200px;
+    position: relative;
+}
